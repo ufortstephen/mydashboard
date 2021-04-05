@@ -26,5 +26,47 @@ function submitInfo() {
         alert("SIGN UP SUCCESSFUL \nWELCOME");
         location.href = 'index/index2.html';
     }
+};
 
+function adjust() {
+    let side = document.getElementById("aside");
+    let main = document.getElementById("main");
+    let x = document.getElementById("cancel");
+    let y = document.getElementById("cancelOne");
+
+    if (side.style.maxWidth > "16%") {
+        side.style.maxWidth = "10%"
+
+
+    } else {
+        side.style.maxWidth = "18%"
+        main.style.maxWidth = "100%"
+
+    }
+
+    if (document.body.style.width < "440px") {
+        side.style.display = "block"
+        x.style.transform = "scale(1)"
+        y.style.display = "none"
+    }
+
+
+
+
+}
+
+function adjustTwo() {
+    let side = document.getElementById("aside");
+    let main = document.getElementById("main");
+    let y = document.getElementById("cancelOne");
+    let x = document.getElementById("cancel");
+    if (x.style.transform = "scale(1)") {
+        x.style.transform = "scale(0)"
+        side.style.display = "none"
+        y.style.display = "block"
+
+
+
+
+    }
 }

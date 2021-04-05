@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--External CSS-->
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="../css/style2.css">
 
     <!--Font Awesome-->
 
@@ -19,15 +19,151 @@
 </head>
 
 <body>
-    <main>
-        <!--The Main contents of this dashboard starts here-->
+    <!--The Main contents of this dashboard starts here-->
+
+    <section class="row">
+        <aside class="col-lg-2" id="aside">
+            <h4 class="text-center  py-3" id="userName">name</h4>
+
+            <div class="info  p-3">
+                <div class="d-flex justify-content-between ">
+                    <div class="align-self-center">
+                        <button>
+                            <i class="fa fa-info text-white" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="image-dummy">
+                        <!-- <img src="../images/facebook image.jpg" alt="" width="90px" height="90px"> -->
+                        <input type="file" name="" id="" class="w-100 " onclick="addImage()">
+                    </div>
+                    <div class="align-self-center">
+                        <button>
+                            <i class="fa fa-medium text-white" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center pt-3">
+                    <h5>John Doe</h5>
+                    <p>FromtEnd Web Engineer</p>
+                </div>
+            </div>
+
+            <nav class="px-2">
+                <h5 class="py-4">Navigation</h5>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-dashcube" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Dashboard</div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-pagelines" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Pages</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-folder" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Folders</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <h5 class="py-4">Components</h5>
+
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-amazon" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">UI Kits</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-window-restore" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Forms</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-table" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Tables</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Charts</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-telegram" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Maps</div>
+                </div>
+                <div class="d-flex justify-content-between py-3">
+                    <div><i class="fa fa-television" aria-hidden="true"></i></div>
+                    <div class="mr-auto ml-5">Navigation Levels</div>
+                    <div><button><i class="fa fa-bars" aria-hidden="true"></i></button></div>
+                </div>
+
+            </nav>
+        </aside>
 
 
-    </main>
+
+        <main class="col-lg-10" id="main">
+            <section class="section-one  ">
+                <div class="row bg-dark p-3">
+                    <div class="col-md-10 d-flex">
+                        <div>
+                            <button class="toggle-one" id="cancelOne" onclick="adjust()">
+                                <i class="fa fa-th-list" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="toggle-two" id="cancel" onclick="adjustTwo()">
+                                X
+                            </button>
+                        </div>
+
+                        <div class="ml-5">
+                            <i class="fa fa-search bg-white p-1" aria-hidden="true">
+                                <input type="search" class="bg-transparent" name="" id="" placeholder="Search....">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mr-auto ml-auto text-white">
+                        <div class="d-flex notification-div">
+                            <div class="mr-5 notification">
+                                <a href="" class="text-white">
+                                    <i class="fa fa-meanpath" aria-hidden="true"></i>
+                                </a>
+                                <span class="bg-danger notifications">3</span>
+                            </div>
+                            <div class="mr-5">
+                                <a href="" class="text-white">
+                                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+                                </a>
+                                <span class="bg-success notifications ">3</span>
+                            </div>
+                            <div class="mr-0">
+                                <a href="" class="text-white">
+                                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+
+                                </a>
+                                <span class="bg-info notifications">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-two ml-auto mr-auto">
+
+                </div>
+
+            </section>
+
+
+
+        </main>
+    </section>
+
+
     <!--The Main contents of this dashboard starts here-->
 
     <!-- Optional JavaScript -->
-    <script src="main2.js"></script>
+    <script src="../javascript/main1.js"></script>
+    <script src="../javascript/main2.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

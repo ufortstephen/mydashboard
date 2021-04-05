@@ -1,0 +1,121 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.section-one {
+    background-color: #9292921c;
+}
+
+aside {
+    background-color: #1A1D24;
+    color: #939496 !important;
+    width: 16%;
+}
+
+.info {
+    background-color: #0A0A0B;
+}
+
+#userName {
+    background-color: #1CB09A;
+    color: #fff;
+}
+
+.image-dummy {
+    background: url(../images/facebook\ image.jpg) no-repeat;
+    border-radius: 1.4rem;
+    padding: 3rem .8rem !important;
+    background-color: red !important;
+    border: 3px solid #fff;
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+aside button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: .5rem;
+}
+
+nav button {
+    border: none;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.fa-search input {
+    border: none;
+    padding: .1rem 0 !important;
+    color: #fff;
+}
+
+.fa-search {
+    background-color: #000 !important;
+    padding: .3rem !important;
+}
+
+.fa-search input:focus {
+    outline: none;
+}
+
+.toggle-one {
+    height: 28px;
+    width: 28px;
+    position: sticky;
+    top: 20px;
+}
+
+.toggle-two {
+    height: 28px;
+    width: 28px;
+    position: sticky;
+    top: 20px;
+    right: 10px;
+    transform: scale(0);
+}
+
+.notifications {
+    padding: .1rem .3rem!important;
+    position: relative;
+    top: -6px;
+    left: -5px;
+    z-index: 99999;
+    box-shadow: 0px 0px 1px 0px #c6c6c6;
+}
+
+main {
+    width: 100 !important;
+}
+
+@media screen and (max-width:888px) {
+    aside {
+        max-width: 100% !important;
+        display: none;
+    }
+    #userName {
+        background-color: #1CB09A;
+        color: #fff;
+        position: fixed;
+        width: 100vw;
+    }
+    .info {
+        margin-top: 3.6rem !important;
+    }
+    .notification-div {
+        padding-top: 3rem !important;
+        margin-left: 2rem !important;
+    }
+    .toggle-two,
+    .toggle-one {
+        position: fixed;
+    }
+}
