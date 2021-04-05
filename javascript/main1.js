@@ -24,7 +24,7 @@ function submitInfo() {
 
     } else {
         alert("SIGN UP SUCCESSFUL \nWELCOME");
-        location.href = 'inedx/index2.html';
+        location.href = 'index/index2.html';
     }
 
 }
