@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="css/style1.css">
+
+    <!--Font Awesome-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="py-5">
+        <!--The Header contents of this dashboard starts here-->
+
+        <section class="row">
+            <div class="col-lg-6 hero-text">
+                <h1 class="text-center pb-4">Welcome to DASHUB</h1>
+                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores deserunt quod tempora blanditiis distinctio officia culpa a inventore mollitia. Sunt dicta praesentium voluptas repellendus tenetur eos velit culpa placeat.</h5>
+                <div class="d-flex justify-content-around socials">
+                    <div><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+            <div class="col-lg-6 pr-5">
+                <form action="" class=" ml-auto ">
+                    <h3 class="py-2 text-center">Welcome to Dashub</h3>
+                    <h5 class="text-center pb-3">Sign In to complete registration</h5>
+                    <label for="">Username</label> <br>
+                    <input type="text" class="" name="" id="user" placeholder=""> <span></span><br>
+                    <label for="">Password</label> <br>
+                    <input type="password" class="" name="" id="pin" placeholder=""><span id="checkPin"></span> <br>
+                    <label for="">E-mail</label><br>
+                    <input type="email" class="" name="" id="email" placeholder=""><br>
+                    <label for="">Phone Number</label><br>
+                    <input type="number" class="" name="" id="phone" placeholder=""><br>
+                    <label for="">Age</label><br>
+                    <input type="number" class="" name="" id="age" placeholder=""><span id="checksAge"></span> <br>
+                    <input type="checkbox" name="" id="terms" checked> <label for="terms" class="terms" value="agree">Agree to <a href="">Terms and Conditions</a></label>
+                    <span id="checksTerms"></span> <br>
+                    </p>
+                    <input type="button" value="SIGN UP" onclick="submitInfo()" id="submit">
+            </div>
+            </form>
+            </div>
+        </section>
+    </header>
+    <!--The Header contents of this dashboard starts here-->
+
+    <main class="card-bg">
+        <!--The Main contents of this dashboard starts here-->
+        <section class="row px-2 py-5 ">
+            <div class="col-lg-3  pr-4 pb-2">
+                <div class=" profile-card p-3">
+                    <div class=" row">
+                        <div class="col-md-6">
+                            <img src="images/facebook image.jpg" alt="" width="80px" height="80px">
+                            <span id="displayName" class="fa-1x font-weight-bold text-muted">Steve</span>
+                        </div>
+                        <div class="col-md-6 align-self-center"><a href="" class="text-info">Facebook Profile
+                                <i class="fa fa-facebook  pl-3 " aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 text-muted">
+                        <div>
+                            <h4>Likes</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Posts</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Friends</h4>
+                            <h5 class="text-center">200-k</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 pr-4">
+                <div class=" profile-card p-3">
+                    <div class=" row">
+                        <div class="col-md-6">
+                            <img src="images/facebook image.jpg" alt="" width="80px" height="80px">
+                            <span id="displayName" class="fa-1x font-weight-bold text-muted">Steve</span>
+                        </div>
+                        <div class="col-md-6 align-self-center"><a href="" class=" pl-3">Twitter Profile <i
+                                    class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 text-muted">
+                        <div>
+                            <h4>Likes</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Posts</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Friends</h4>
+                            <h5>200-k</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 pr-4">
+                <div class=" profile-card p-3">
+                    <div class=" row">
+                        <div class="col-md-6">
+                            <img src="images/facebook image.jpg" alt="" width="80px" height="80px">
+                            <span id="displayName" class="fa-1x font-weight-bold text-muted">Steve</span>
+                        </div>
+                        <div class="col-md-6 align-self-center"><a href="" class="pl-3 text-primary">LinkedIn Profile
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a></div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 text-muted">
+                        <div>
+                            <h4>Likes</h4>
+                            <h5 class="text-center">200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Posts</h4>
+                            <h5 class="text-center">200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Friends</h4>
+                            <h5 class="text-center">200-k</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 pr-0">
+                <div class=" profile-card p-3">
+                    <div class=" row">
+                        <div class="col-md-6">
+                            <img src="images/facebook image.jpg" alt="" width="80px" height="80px">
+                            <span id="displayName" class="fa-1x font-weight-bold text-muted">Steve</span>
+                        </div>
+                        <div class="col-md-6 align-self-center"><a href="" class="text-warning pl-3">Instagram Profile
+                            <i class="fa fa-instagram " aria-hidden="true"></i>
+                        </a></div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 text-muted">
+                        <div>
+                            <h4>Likes</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Posts</h4>
+                            <h5>200-k</h5>
+                        </div>
+                        <div>
+                            <h4>Friends</h4>
+                            <h5>200-k</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--The Main contents of this dashboard starts here-->
+
+
+    <!-- Optional JavaScript -->
+    <script src="javascript/main1.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+header {
+    height: max-content;
+    background-color: #1B1E25;
+}
+
+form {
+    width: 50%;
+    padding: .9rem 3rem !important;
+    background-color: #1CB09A;
+}
+
+input {
+    margin: .4rem 0 !important;
+    width: 100%;
+    padding: 5px !important;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+input[type=checkbox] {
+    width: max-content !important;
+}
+
+label {
+    margin-top: .5rem !important;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.hero-text {
+    color: rgba(255, 255, 255, 0.548);
+    padding-top: 6rem !important;
+    padding-left: 6rem !important;
+    position: relative;
+    padding-bottom: 5rem !important;
+}
+
+.socials {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.socials a {
+    margin-right: 1rem !important;
+    font-size: x-large;
+    color: #1cb09ad3;
+}
+
+.terms {
+    font-size: medium;
+    padding-bottom: 20px !important;
+}
+
+.card-bg {
+    background-color: #c5c5c562;
+}
+
+main img {
+    border-radius: 50%;
+}
+
+.profile-card {
+    background-color: #1B1E25;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px 5px #c5c5c5;
+}
+
+.profile-card a {
+    color: #1CB09A;
+}
+
+@media screen and (max-width:544px) {
+    form {
+        margin: 0px auto !important;
+        width: 100vw !important;
+    }
+    form h3 {
+        display: none;
+    }
+    .hero-text {
+        color: rgba(255, 255, 255, 0.548);
+        padding-top: 0rem !important;
+        padding-left: 1rem !important;
+        position: relative;
+        text-align: center;
+        padding-bottom: 5rem !important;
+    }
+    .socials {
+        position: absolute;
+        bottom: 1rem;
+        left: 30%;
+    }
+    .socials a {
+        margin-right: 1rem !important;
+        font-size: medium;
+    }
+    main .pr-4 {
+        padding-right: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+}
