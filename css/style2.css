@@ -96,6 +96,95 @@ main {
     width: 100 !important;
 }
 
+.info-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px #c5c5c5;
+    min-height: 120px;
+}
+
+.info-card .fa {
+    width: max-content !important;
+}
+
+.border-left {
+    border-left: 1px solid #000;
+}
+
+.info-card button:hover,
+.info-card button:focus {
+    background-color: red !important;
+    color: #fff;
+    transform: scale(0.8);
+    outline: none;
+    box-shadow: 0px 0px 3px 1px#1CB09A;
+}
+
+.last button:hover,
+.last button:focus {
+    background-color: red !important;
+    color: #fff;
+    transform: scale(0.8);
+    outline: none;
+    box-shadow: 0px 0px 3px 1px#1CB09A;
+}
+
+.bd {
+    border-left: 1px solid #000;
+}
+
+.last {
+    background-color: #1CB09A;
+}
+
+.last button {
+    position: absolute;
+    right: .5rem;
+}
+
+.graph-header {
+    background-color: #c6c6c66b;
+}
+
+.graph-header button {
+    outline: none;
+}
+
+.graph-header button:focus {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transform: scale(0.8);
+}
+
+.graph {
+    height: 200px;
+    background-color: #fff;
+}
+
+.graph-right {
+    height: max-content;
+    box-shadow: 0px 0px 0px 1px #c5c5c5;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+}
+
+.table td,
+.table th {
+    padding: .75rem !important;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.btn-gemini {
+    background-color: #37B59F;
+}
+
+.btn-virgo {
+    background-color: #9CB674;
+}
+
 @media screen and (max-width:888px) {
     aside {
         max-width: 100% !important;
@@ -117,5 +206,15 @@ main {
     .toggle-two,
     .toggle-one {
         position: fixed;
+    }
+}
+
+@media screen and (max-width:758px) {
+    .info-card {
+        width: 100%;
+        margin-bottom: 1REM !important;
+    }
+    .pr-5 {
+        padding-right: 0 !important;
     }
 }
